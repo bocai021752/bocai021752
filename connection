@@ -1,0 +1,18 @@
+connection.onCompletion(
+	(_textDocumentPosition: TextDocumentPositionParams): CompletionItem[] => {
+		// The pass parameter contains the position of the text document in
+		// which code complete got requested. For the example we ignore this
+		// info and always provide the same completion items.
+		return [
+			{
+				label: 'TypeScript',
+				kind: CompletionItemKind.Text,
+				data: 1
+			},
+			{
+				label: 'JavaScript',
+				kind: CompletionItemKind.Text,
+				data: 2
+————————————————
+版权声明：本文为CSDN博主「Mino.66」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/luoluoyang23/article/details/124543453
