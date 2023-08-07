@@ -1,0 +1,10 @@
+{ 
+      clientID = args[0]; 
+      subName = args[1]; 
+      selector = args[2]; 
+      durable = Boolean.valueOf(args[3]).booleanValue(); 
+      transactional = Boolean.valueOf(args[4]).booleanValue(); 
+      jndiCtxFactory = args[5]; 
+      connFactory = args[6]; 
+      providerURL = args[7]; 
+      topicName = args[8]; 
