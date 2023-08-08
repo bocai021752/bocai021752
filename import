@@ -1,0 +1,25 @@
+package com.sun.content.server.operator.security.adaptor; 
+import com.sun.content.server.service.security.User; 
+import java.util.Date; 
+import java.util.Hashtable; 
+ 
+public class SampleUserImpl implements User 
+{ 
+ 
+    private Hashtable fInfo; 
+ 
+    public SampleUserImpl() { 
+ 
+        fInfo = new Hashtable(); 
+ 
+        setLoginId("guest"); 
+        setFirstName("guest"); 
+        setLastName("guest"); 
+        setPassword ("guest"); 
+        setCreateDate(new Date()); 
+        setActivateDate(new Date()); 
+        fInfo.put("enabled", String.valueOf(true)); 
+        setMiddleName("guest"); 
+        setEmail("guest@email.com"); 
+        setUniqueDeviceId("1231231233"); 
+    } 
