@@ -1,0 +1,8 @@
+  ForeignKeySchema foreign_key_schema = conn.createForeignKey( "Employee", "Department", "fk_emp_to_dept" );
+            foreign_key_schema.addColumnReference( "dept_no", "dept_no" );
+    
+            conn.schemaCreateComplete();
+
+            conn.release();
+
+            Demo.display( "CreateDb completed successfully" );
